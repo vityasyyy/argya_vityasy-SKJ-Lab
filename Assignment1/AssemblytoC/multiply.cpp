@@ -5,7 +5,7 @@ int main(){
     int y = 10;
     int result = x * y;
     
-    std::cout<<"Result: "<<result<<'\n';
+    std::cout << result;
     
     return 0;
 }
