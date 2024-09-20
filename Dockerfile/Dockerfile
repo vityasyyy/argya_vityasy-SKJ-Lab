@@ -8,6 +8,7 @@ RUN apt-get update && \
     curl \
     git \
     strace \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a directory to be used as a mount point
