@@ -22,7 +22,7 @@ int main() {
     }
     file_size = file_stat.st_size; // size dari file_stat struct
     
-    // where to map the memory, how much to map, permission, shared or private(changes to mapped memory are written back to the file), file desciptor, offset(where the mapping starts)
+    // where to map the memory(NULL letting OS decide where to map), how much to map, permission, shared or private(changes to mapped memory are written back to the file), file desciptor, offset(where the mapping starts)
     mapped_file = mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
     // mapped_file is the direct memory representation of the file described by the fd. As an array of char
     if(mapped_file == MAP_FAILED) {
